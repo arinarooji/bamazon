@@ -39,7 +39,7 @@ inquirer.prompt([
 });
 
 
-//connected(err): runs a query that selects all data from products table, loops through the res array and logs properties to the console
+//connected(err): runs a query that selects all data from products table, loops through the res array and logs each object's properties to the console
 function connected(err) {
     if (err) throw err;
 

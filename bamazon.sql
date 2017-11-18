@@ -30,4 +30,16 @@ VALUES ("Samsung 8K TV", 1299.99, "Electronics", 5000);
 INSERT INTO products (Product, Price, Department, Stock)
 VALUES ("Protein Bar", 0.89, "Nutrition", 5000);
 
+INSERT INTO products (Product, Price, Department, Stock)
+VALUES ("Smoothie", 4.99, "Nutrition", 5000);
+
+INSERT INTO products (Product, Price, Department, Stock)
+VALUES ("Hoverboard", 299.99, "Sports/Outdoors", 5000);
+
+INSERT INTO products (Product, Price, Department, Stock)
+VALUES ("Snowboard", 179.99, "Sports/Outdoors", 5000);
+
+INSERT INTO products (Product, Price, Department, Stock)
+VALUES ("Football", 19.99, "Sports/Outdoors", 5000);
+
 SELECT * FROM products;
