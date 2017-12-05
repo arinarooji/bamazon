@@ -2,8 +2,8 @@
 var mysql    = require('mysql');
 var inquirer = require('inquirer');
 
-//Connect to Bamazon
-var connection = mysql.createConnection({ host: 'localhost', port: 3306, user: 'root', password: '8283263ka', database: 'bamazon' });
+//Connect to Bamazon (modify credentials here)
+var connection = mysql.createConnection({ host: 'localhost', port: 3306, user: 'root', password: '', database: 'bamazon' });
 
 //Log all data from products table
 connection.connect(connected);
@@ -38,7 +38,7 @@ function checkout(res) {
         var newQty = parseInt(response.qty);
 
         //Verify that the user entered a valid product ID and quantity
-        if (newID > 0 && newQty > 0) {
+        if (newID > 0 && newQty > 0 && !isNaN(newID) && !isNaN(newQty)) {
 
             //Select all data for that product
             var query = 'SELECT * FROM products WHERE ID = ?';
@@ -51,11 +51,13 @@ function checkout(res) {
                     updateStock(res[0].ID, newStock);
                     //Log the order details and total price
                     console.log(newQty, res[0].Product + '(s)', 'successfully ordered! Your total is ' + '$' + (newQty * res[0].Price).toFixed(2));
+                    //End the connection
+                    connection.end();
                 }
                 else console.log('Insufficient quantity.');
             });
         }
-        else console.log('Invalid ID.');
+        else console.log('Invalid input');
     });
 }
 
@@ -66,3 +68,4 @@ function updateStock(id, stock) {
         if (err) throw err;
     });
 }
+
