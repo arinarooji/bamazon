@@ -6,7 +6,7 @@ Order tons of cool products right from your terminal!<br />
 <b>Step 1:</b> Setup the test database provided in the <b>bamazon.sql</b> file<br><br>
 ![step-1](https://user-images.githubusercontent.com/30301389/33532807-c654c534-d86a-11e7-9c18-3241f7cf5c18.png)<br>
 
-<b>Step 2:</b> Using Node.js, run the <b>bamazonCustomer.js</b> file in your terminal.<br>
+<b>Step 2:</b> Using Node.js, run the <b>bamazonCustomer.js</b> file in your terminal (remember to modify connection credentials in this file).<br>
         *Don't have Node.js? No worries, download it here:* https://nodejs.org/en/<br><br>
 ![step-2](https://user-images.githubusercontent.com/30301389/33532809-c980d1d0-d86a-11e7-9c92-e1837d8bb77a.png)<br>
 
