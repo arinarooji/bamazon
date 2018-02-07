@@ -1,7 +1,7 @@
 # BAMAZON
 Order tons of cool products right from your terminal!<br />
 
-<b>Step 0:</b><br> Clone the BAMAZON repository to your local machine.<br>
+<b>Step 0:</b><br> Clone the BAMAZON repository to your local machine, or download the ZIP file.<br>
 
 <b>Step 1:</b><br> Setup the test database provided in the <b>bamazon.sql</b> file<br><br>
 ![step-1](https://user-images.githubusercontent.com/30301389/33532807-c654c534-d86a-11e7-9c18-3241f7cf5c18.png)<br>
